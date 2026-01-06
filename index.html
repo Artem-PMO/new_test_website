@@ -226,9 +226,21 @@
       <section class="relative min-h-[92vh] flex items-center">
         <!-- "Video" Placeholder -->
         <div class="absolute inset-0">
-          <div class="absolute inset-0 bg-[radial-gradient(1200px_circle_at_25%_25%,rgba(240,180,118,.10),transparent_55%),radial-gradient(900px_circle_at_75%_60%,rgba(184,115,51,.08),transparent_55%)]"></div>
-          <div class="absolute inset-0 bg-gradient-to-b from-oled/80 via-oled/45 to-oled/90"></div>          
           <!-- Real video background -->
+          <video
+            id="heroVideo"
+            class="absolute inset-0 h-full w-full object-cover"
+            autoplay
+            muted
+            loop
+            playsinline
+            webkit-playsinline
+            preload="auto"
+          >
+            <source src="assets/plant-hero.mp4?v=2" type="video/mp4" />
+          </video>
+          <div class="absolute inset-0 bg-[radial-gradient(1200px_circle_at_25%_25%,rgba(240,180,118,.10),transparent_55%),radial-gradient(900px_circle_at_75%_60%,rgba(184,115,51,.08),transparent_55%)]"></div>
+          <div class="absolute inset-0 bg-gradient-to-b from-[#050505]/75 via-[#050505]/45 to-[#050505]/85"></div>          <!-- Real video background -->
           <video
             class="absolute inset-0 h-full w-full object-cover"
             autoplay
@@ -862,5 +874,23 @@
       );
       els.forEach((el) => io.observe(el));
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const v = document.getElementById("heroVideo");
+      if (!v) return;
+  
+      v.muted = true;
+      v.playsInline = true;
+  
+      const tryPlay = () => {
+        const p = v.play();
+        if (p && p.catch) p.catch(() => {});
+      };
+  
+      tryPlay();
+      // запасной пинок после загрузки метаданных
+      v.addEventListener("loadedmetadata", tryPlay);
+    });
+  </script>
   </body>
 </html>
