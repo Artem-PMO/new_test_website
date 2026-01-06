@@ -221,18 +221,29 @@
     </header>
 
     <!-- Hero -->
+    
     <main id="top" class="noise">
       <section class="relative min-h-[92vh] flex items-center">
         <!-- "Video" Placeholder -->
         <div class="absolute inset-0">
           <div class="absolute inset-0 bg-[radial-gradient(1200px_circle_at_25%_25%,rgba(240,180,118,.10),transparent_55%),radial-gradient(900px_circle_at_75%_60%,rgba(184,115,51,.08),transparent_55%)]"></div>
           <div class="absolute inset-0 bg-gradient-to-b from-oled via-oled/70 to-oled"></div>
-
-          <!-- Mock video surface -->
-          <div class="absolute inset-0 opacity-[.38]">
-            <div class="absolute inset-0 bg-charcoal"></div>
-            <div class="absolute inset-0 bg-[radial-gradient(800px_circle_at_40%_55%,rgba(240,180,118,.22),transparent_55%)]"></div>
-            <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,.04)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:88px_88px]"></div>
+          
+          <!-- Real video background -->
+          <video
+            class="absolute inset-0 h-full w-full object-cover"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          >
+            <source src="assets/plant-hero.mp4" type="video/mp4" />
+          </video>
+          
+          <!-- Optional: subtle grid + extra readability on top of video -->
+          <div class="absolute inset-0 opacity-[.18]">
+            <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,.04)_1px,transparent_1px)] bg-[size:88px_88px]"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-oled via-transparent to-oled"></div>
           </div>
 
