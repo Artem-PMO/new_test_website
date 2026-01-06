@@ -1,0 +1,863 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21380\viewh11540\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!doctype html>\
+<html lang="en" class="scroll-smooth">\
+  <head>\
+    <meta charset="UTF-8" />\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+    <title>Copper Cluster Maroc \'97 Vertically Integrated Copper & Cable Manufacturing</title>\
+    <meta\
+      name="description"\
+      content="Industrial luxury B2B cluster in OEZ Tiflet, Morocco \'97 scrap sourcing, refining, casting, wire rod and LV/MV cabling. Certified excellence. Export-ready."\
+    />\
+\
+    <!-- Google Fonts -->\
+    <link rel="preconnect" href="https://fonts.googleapis.com" />\
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />\
+    <link\
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap"\
+      rel="stylesheet"\
+    />\
+\
+    <!-- Font Awesome -->\
+    <link\
+      rel="stylesheet"\
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"\
+      referrerpolicy="no-referrer"\
+    />\
+\
+    <!-- Tailwind via CDN -->\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <script>\
+      tailwind.config = \{\
+        theme: \{\
+          extend: \{\
+            fontFamily: \{ sans: ["Manrope", "ui-sans-serif", "system-ui"] \},\
+            colors: \{\
+              oled: "#050505",\
+              charcoal: "#121212",\
+              offwhite: "#E5E5E5",\
+              copperA: "#B87333",\
+              copperB: "#F0B476",\
+            \},\
+            boxShadow: \{\
+              copperGlow: "0 0 0 1px rgba(240,180,118,.22), 0 0 40px rgba(184,115,51,.08)",\
+              soft: "0 12px 40px rgba(0,0,0,.55)",\
+            \},\
+            letterSpacing: \{\
+              luxe: ".18em",\
+            \},\
+            backgroundImage: \{\
+              copperGrad:\
+                "linear-gradient(135deg, rgba(184,115,51,1) 0%, rgba(240,180,118,1) 100%)",\
+              copperLine:\
+                "linear-gradient(90deg, rgba(184,115,51,.0) 0%, rgba(240,180,118,.6) 50%, rgba(184,115,51,.0) 100%)",\
+            \},\
+          \},\
+        \},\
+      \};\
+    </script>\
+\
+    <!-- Alpine.js (for minimal interactions) -->\
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>\
+\
+    <style>\
+      :root \{\
+        color-scheme: dark;\
+      \}\
+\
+      /* Subtle premium noise overlay */\
+      .noise \{\
+        position: relative;\
+        isolation: isolate;\
+      \}\
+      .noise::before \{\
+        content: "";\
+        position: absolute;\
+        inset: 0;\
+        pointer-events: none;\
+        z-index: 0;\
+        opacity: 0.06;\
+        background-image:\
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.9'/%3E%3C/svg%3E");\
+      \}\
+      .noise > * \{\
+        position: relative;\
+        z-index: 1;\
+      \}\
+\
+      /* Fade-in reveal */\
+      .reveal \{\
+        opacity: 0;\
+        transform: translateY(14px);\
+        transition: opacity 900ms cubic-bezier(0.2, 0.8, 0.2, 1),\
+          transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1);\
+        will-change: opacity, transform;\
+      \}\
+      .reveal.is-visible \{\
+        opacity: 1;\
+        transform: translateY(0);\
+      \}\
+\
+      /* Soft underline line */\
+      .thin-copper-line \{\
+        height: 1px;\
+        background-image: linear-gradient(\
+          90deg,\
+          rgba(184, 115, 51, 0),\
+          rgba(240, 180, 118, 0.7),\
+          rgba(184, 115, 51, 0)\
+        );\
+      \}\
+\
+      /* Reduce motion */\
+      @media (prefers-reduced-motion: reduce) \{\
+        .reveal \{\
+          opacity: 1 !important;\
+          transform: none !important;\
+          transition: none !important;\
+        \}\
+        html \{\
+          scroll-behavior: auto;\
+        \}\
+      \}\
+    </style>\
+  </head>\
+\
+  <body class="bg-oled text-offwhite font-sans antialiased">\
+    <!-- Top Glow -->\
+    <div class="pointer-events-none fixed inset-x-0 top-0 h-24 bg-gradient-to-b from-charcoal/70 to-transparent z-40"></div>\
+\
+    <!-- Header / Nav -->\
+    <header\
+      x-data="\{ open: false \}"\
+      class="sticky top-0 z-50 border-b border-white/5 bg-oled/70 backdrop-blur"\
+    >\
+      <nav class="mx-auto max-w-7xl px-5 sm:px-8">\
+        <div class="flex h-16 items-center justify-between">\
+          <!-- Logo -->\
+          <a href="#top" class="group inline-flex items-center gap-3">\
+            <span class="h-2 w-2 rounded-full bg-copperA shadow-[0_0_24px_rgba(240,180,118,.25)]"></span>\
+            <span class="text-[12px] sm:text-[13px] tracking-luxe uppercase font-light">\
+              Copper Cluster Maroc\
+            </span>\
+            <span class="hidden sm:inline-block h-px w-10 bg-white/10 group-hover:bg-white/20 transition"></span>\
+          </a>\
+\
+          <!-- Desktop Links -->\
+          <div class="hidden md:flex items-center gap-8">\
+            <a href="#process" class="text-xs uppercase tracking-luxe text-white/70 hover:text-white transition">\
+              Vertical Integration\
+            </a>\
+            <a href="#compliance" class="text-xs uppercase tracking-luxe text-white/70 hover:text-white transition">\
+              Compliance\
+            </a>\
+            <a href="#products" class="text-xs uppercase tracking-luxe text-white/70 hover:text-white transition">\
+              Products\
+            </a>\
+            <a href="#esg" class="text-xs uppercase tracking-luxe text-white/70 hover:text-white transition">\
+              ESG\
+            </a>\
+          </div>\
+\
+          <!-- CTA + Mobile menu button -->\
+          <div class="flex items-center gap-3">\
+            <a\
+              href="#contact"\
+              class="hidden sm:inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-luxe text-white/85 hover:border-white/30 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-copperB/30"\
+            >\
+              <i class="fa-solid fa-lock text-[12px] opacity-80"></i>\
+              Partner Access\
+            </a>\
+\
+            <button\
+              @click="open = !open"\
+              class="md:hidden inline-flex items-center justify-center rounded-full border border-white/15 h-10 w-10 hover:border-white/30 transition focus:outline-none focus:ring-2 focus:ring-copperB/30"\
+              :aria-expanded="open"\
+              aria-controls="mobileMenu"\
+              aria-label="Toggle menu"\
+            >\
+              <i class="fa-solid" :class="open ? 'fa-xmark' : 'fa-bars'"></i>\
+            </button>\
+          </div>\
+        </div>\
+\
+        <!-- Mobile Menu -->\
+        <div\
+          id="mobileMenu"\
+          x-show="open"\
+          x-transition.opacity.duration.200ms\
+          class="md:hidden border-t border-white/5 py-4"\
+        >\
+          <div class="flex flex-col gap-4">\
+            <a @click="open=false" href="#process" class="text-xs uppercase tracking-luxe text-white/80 hover:text-white transition">\
+              Vertical Integration\
+            </a>\
+            <a @click="open=false" href="#compliance" class="text-xs uppercase tracking-luxe text-white/80 hover:text-white transition">\
+              Compliance\
+            </a>\
+            <a @click="open=false" href="#products" class="text-xs uppercase tracking-luxe text-white/80 hover:text-white transition">\
+              Products\
+            </a>\
+            <a @click="open=false" href="#esg" class="text-xs uppercase tracking-luxe text-white/80 hover:text-white transition">\
+              ESG\
+            </a>\
+\
+            <a\
+              @click="open=false"\
+              href="#contact"\
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-4 py-2 text-xs uppercase tracking-luxe text-white/85 hover:border-white/30 hover:text-white transition"\
+            >\
+              <i class="fa-solid fa-lock text-[12px] opacity-80"></i>\
+              Partner Access\
+            </a>\
+          </div>\
+        </div>\
+      </nav>\
+    </header>\
+\
+    <!-- Hero -->\
+    <main id="top" class="noise">\
+      <section class="relative min-h-[92vh] flex items-center">\
+        <!-- "Video" Placeholder -->\
+        <div class="absolute inset-0">\
+          <div class="absolute inset-0 bg-[radial-gradient(1200px_circle_at_25%_25%,rgba(240,180,118,.10),transparent_55%),radial-gradient(900px_circle_at_75%_60%,rgba(184,115,51,.08),transparent_55%)]"></div>\
+          <div class="absolute inset-0 bg-gradient-to-b from-oled via-oled/70 to-oled"></div>\
+\
+          <!-- Mock video surface -->\
+          <div class="absolute inset-0 opacity-[.38]">\
+            <div class="absolute inset-0 bg-charcoal"></div>\
+            <div class="absolute inset-0 bg-[radial-gradient(800px_circle_at_40%_55%,rgba(240,180,118,.22),transparent_55%)]"></div>\
+            <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,.04)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,.03)_1px,transparent_1px)] bg-[size:88px_88px]"></div>\
+            <div class="absolute inset-0 bg-gradient-to-r from-oled via-transparent to-oled"></div>\
+          </div>\
+\
+          <!-- Bottom fade -->\
+          <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-oled to-transparent"></div>\
+        </div>\
+\
+        <div class="relative mx-auto max-w-7xl px-5 sm:px-8 py-24 sm:py-28">\
+          <div class="max-w-3xl">\
+            <p class="reveal text-[12px] uppercase tracking-luxe text-white/70">\
+              OEZ Tiflet, Morocco \'b7 Copper-to-Cable Manufacturing Cluster\
+            </p>\
+\
+            <h1 class="reveal mt-5 text-4xl sm:text-6xl font-light uppercase tracking-luxe leading-tight">\
+              Forging the Future.<br class="hidden sm:block" />\
+              Preserving the Present.\
+            </h1>\
+\
+            <p class="reveal mt-6 text-base sm:text-lg text-white/75 leading-relaxed">\
+              Vertically integrated copper & cable manufacturing designed for\
+              critical infrastructure: construction holdings, government contractors, and\
+              industrial EPCs. Total control from recovered copper to export-ready products.\
+            </p>\
+\
+            <div class="reveal mt-10 flex flex-col sm:flex-row gap-3 sm:items-center">\
+              <a\
+                href="#products"\
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-xs uppercase tracking-luxe font-medium text-oled bg-copperGrad hover:opacity-95 transition shadow-soft focus:outline-none focus:ring-2 focus:ring-copperB/40"\
+              >\
+                Explore Capabilities\
+                <i class="fa-solid fa-arrow-right ml-3 text-[12px]"></i>\
+              </a>\
+\
+              <a\
+                href="#process"\
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-xs uppercase tracking-luxe text-white/85 border border-white/15 hover:border-white/30 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-copperB/30"\
+              >\
+                Vertical Integration Map\
+              </a>\
+            </div>\
+\
+            <div class="reveal mt-12 max-w-xl">\
+              <div class="thin-copper-line"></div>\
+              <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs uppercase tracking-luxe text-white/60">\
+                <span><i class="fa-solid fa-shield-halved mr-2 text-white/50"></i>Quality Systems</span>\
+                <span><i class="fa-solid fa-recycle mr-2 text-white/50"></i>Circular Feedstock</span>\
+                <span><i class="fa-solid fa-ship mr-2 text-white/50"></i>Export Logistics</span>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+\
+        <!-- Scroll Hint -->\
+        <a\
+          href="#process"\
+          class="absolute bottom-8 left-1/2 -translate-x-1/2 inline-flex items-center gap-3 text-xs uppercase tracking-luxe text-white/55 hover:text-white/75 transition"\
+          aria-label="Scroll to process"\
+        >\
+          <span class="h-px w-10 bg-white/15"></span>\
+          Scroll\
+          <span class="h-px w-10 bg-white/15"></span>\
+        </a>\
+      </section>\
+\
+      <!-- Process / Vertical Integration -->\
+      <section id="process" class="mx-auto max-w-7xl px-5 sm:px-8 py-24 sm:py-32">\
+        <div class="max-w-3xl">\
+          <p class="reveal text-xs uppercase tracking-luxe text-white/60">Vertical Integration</p>\
+          <h2 class="reveal mt-4 text-2xl sm:text-4xl font-light uppercase tracking-luxe">\
+            Total Control. Zero Waste.\
+          </h2>\
+          <p class="reveal mt-6 text-white/70 leading-relaxed">\
+            By owning every critical step, we protect conductivity, geometry, insulation integrity,\
+            and delivery timelines. This is industrial production run like a precision instrument\'97not a commodity line.\
+          </p>\
+        </div>\
+\
+        <div class="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-10">\
+          <!-- Timeline rail -->\
+          <div class="lg:col-span-5">\
+            <div class="reveal rounded-3xl border border-white/10 bg-charcoal/40 p-8 shadow-soft">\
+              <div class="flex items-start justify-between gap-6">\
+                <div>\
+                  <p class="text-xs uppercase tracking-luxe text-white/60">Operational Doctrine</p>\
+                  <h3 class="mt-3 text-lg font-light uppercase tracking-luxe">Cluster Discipline</h3>\
+                </div>\
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-luxe text-white/75">\
+                  <span class="h-1.5 w-1.5 rounded-full bg-copperB"></span>\
+                  Export-Ready\
+                </span>\
+              </div>\
+\
+              <div class="mt-8 space-y-6">\
+                <div class="flex gap-4">\
+                  <div class="mt-1 h-10 w-10 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center">\
+                    <i class="fa-solid fa-magnifying-glass text-white/70"></i>\
+                  </div>\
+                  <div>\
+                    <p class="text-xs uppercase tracking-luxe text-white/70">Traceability</p>\
+                    <p class="mt-1 text-sm text-white/70 leading-relaxed">\
+                      Feedstock verification, batch tracking, and controlled metallurgy for consistent performance.\
+                    </p>\
+                  </div>\
+                </div>\
+\
+                <div class="flex gap-4">\
+                  <div class="mt-1 h-10 w-10 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center">\
+                    <i class="fa-solid fa-temperature-high text-white/70"></i>\
+                  </div>\
+                  <div>\
+                    <p class="text-xs uppercase tracking-luxe text-white/70">Process Stability</p>\
+                    <p class="mt-1 text-sm text-white/70 leading-relaxed">\
+                      Controlled thermal profiles and clean casting practices to protect purity and structure.\
+                    </p>\
+                  </div>\
+                </div>\
+\
+                <div class="flex gap-4">\
+                  <div class="mt-1 h-10 w-10 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center">\
+                    <i class="fa-solid fa-screwdriver-wrench text-white/70"></i>\
+                  </div>\
+                  <div>\
+                    <p class="text-xs uppercase tracking-luxe text-white/70">Reliability</p>\
+                    <p class="mt-1 text-sm text-white/70 leading-relaxed">\
+                      Built for procurement that values repeatability: schedules, specs, and compliance that hold up under audits.\
+                    </p>\
+                  </div>\
+                </div>\
+              </div>\
+\
+              <div class="mt-10 thin-copper-line"></div>\
+\
+              <p class="mt-6 text-xs uppercase tracking-luxe text-white/55">\
+                Built for infrastructure, not marketing fluff.\
+              </p>\
+            </div>\
+          </div>\
+\
+          <!-- Steps -->\
+          <div class="lg:col-span-7">\
+            <div class="space-y-6">\
+              <!-- Step 1 -->\
+              <article class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 hover:border-white/20 transition">\
+                <div class="flex items-start gap-5">\
+                  <div class="h-12 w-12 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:shadow-copperGlow transition">\
+                    <span class="text-xs uppercase tracking-luxe text-white/80">01</span>\
+                  </div>\
+                  <div>\
+                    <h3 class="text-sm sm:text-base font-light uppercase tracking-luxe">\
+                      Scrap Sourcing & Sorting\
+                    </h3>\
+                    <p class="mt-3 text-white/70 leading-relaxed">\
+                      Morocco-based sourcing with controlled sorting to stabilize chemistry.\
+                      Circular feedstock becomes a predictable input\'97no surprises, no shortcuts.\
+                    </p>\
+                    <div class="mt-5 flex flex-wrap gap-2">\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        Circular Economy\
+                      </span>\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        Batch Traceability\
+                      </span>\
+                    </div>\
+                  </div>\
+                </div>\
+              </article>\
+\
+              <!-- Step 2 -->\
+              <article class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 hover:border-white/20 transition">\
+                <div class="flex items-start gap-5">\
+                  <div class="h-12 w-12 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:shadow-copperGlow transition">\
+                    <span class="text-xs uppercase tracking-luxe text-white/80">02</span>\
+                  </div>\
+                  <div>\
+                    <h3 class="text-sm sm:text-base font-light uppercase tracking-luxe">\
+                      Refining & Metallurgy Control\
+                    </h3>\
+                    <p class="mt-3 text-white/70 leading-relaxed">\
+                      Process discipline focused on consistency: impurities managed, structure protected,\
+                      and outputs engineered for downstream drawing and cabling performance.\
+                    </p>\
+                    <div class="mt-5 flex flex-wrap gap-2">\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        Controlled Chemistry\
+                      </span>\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        Quality Gates\
+                      </span>\
+                    </div>\
+                  </div>\
+                </div>\
+              </article>\
+\
+              <!-- Step 3 -->\
+              <article class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 hover:border-white/20 transition">\
+                <div class="flex items-start gap-5">\
+                  <div class="h-12 w-12 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:shadow-copperGlow transition">\
+                    <span class="text-xs uppercase tracking-luxe text-white/80">03</span>\
+                  </div>\
+                  <div>\
+                    <h3 class="text-sm sm:text-base font-light uppercase tracking-luxe">\
+                      Casting: Ingots & Wire Rod\
+                    </h3>\
+                    <p class="mt-3 text-white/70 leading-relaxed">\
+                      Clean casting for premium handling and predictable downstream processing.\
+                      From copper ingots to 8mm wire rod \'97 geometry and surface quality matter.\
+                    </p>\
+                    <div class="mt-5 flex flex-wrap gap-2">\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        Surface Integrity\
+                      </span>\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        Dimensional Control\
+                      </span>\
+                    </div>\
+                  </div>\
+                </div>\
+              </article>\
+\
+              <!-- Step 4 -->\
+              <article class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 hover:border-white/20 transition">\
+                <div class="flex items-start gap-5">\
+                  <div class="h-12 w-12 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:shadow-copperGlow transition">\
+                    <span class="text-xs uppercase tracking-luxe text-white/80">04</span>\
+                  </div>\
+                  <div>\
+                    <h3 class="text-sm sm:text-base font-light uppercase tracking-luxe">\
+                      LV/MV Cabling & Testing\
+                    </h3>\
+                    <p class="mt-3 text-white/70 leading-relaxed">\
+                      Cabling engineered for infrastructure: conductor stranding, insulation, sheathing, and testing.\
+                      Built to meet international expectations for durability, safety, and performance.\
+                    </p>\
+                    <div class="mt-5 flex flex-wrap gap-2">\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        IEC-Oriented\
+                      </span>\
+                      <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] uppercase tracking-luxe text-white/60">\
+                        Electrical Verification\
+                      </span>\
+                    </div>\
+                  </div>\
+                </div>\
+              </article>\
+            </div>\
+          </div>\
+        </div>\
+      </section>\
+\
+      <!-- Compliance / Trust Block -->\
+      <section id="compliance" class="border-y border-white/5 bg-charcoal/40">\
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 py-16 sm:py-20">\
+          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-10">\
+            <div class="max-w-2xl">\
+              <p class="reveal text-xs uppercase tracking-luxe text-white/60">Compliance</p>\
+              <h2 class="reveal mt-4 text-2xl sm:text-4xl font-light uppercase tracking-luxe">\
+                Certified Excellence. International Compliance.\
+              </h2>\
+              <p class="reveal mt-6 text-white/70 leading-relaxed">\
+                Procurement-grade documentation, controlled processes, and audit-ready operations.\
+                Built to align with global standards expected by infrastructure stakeholders.\
+              </p>\
+            </div>\
+\
+            <div class="reveal grid grid-cols-1 sm:grid-cols-3 gap-3 w-full lg:max-w-2xl">\
+              <div class="rounded-2xl border border-white/10 bg-oled/60 p-5 hover:border-white/20 transition">\
+                <p class="text-[11px] uppercase tracking-luxe text-white/60">Quality</p>\
+                <p class="mt-2 text-sm uppercase tracking-luxe font-light">ISO 9001</p>\
+                <div class="mt-4 h-px w-full bg-white/10"></div>\
+                <p class="mt-3 text-xs text-white/65">\
+                  Process control, traceability, and continuous improvement.\
+                </p>\
+              </div>\
+\
+              <div class="rounded-2xl border border-white/10 bg-oled/60 p-5 hover:border-white/20 transition">\
+                <p class="text-[11px] uppercase tracking-luxe text-white/60">Environment</p>\
+                <p class="mt-2 text-sm uppercase tracking-luxe font-light">ISO 14001</p>\
+                <div class="mt-4 h-px w-full bg-white/10"></div>\
+                <p class="mt-3 text-xs text-white/65">\
+                  Environmental systems aligned with responsible operations.\
+                </p>\
+              </div>\
+\
+              <div class="rounded-2xl border border-white/10 bg-oled/60 p-5 hover:border-white/20 transition">\
+                <p class="text-[11px] uppercase tracking-luxe text-white/60">Electrical</p>\
+                <p class="mt-2 text-sm uppercase tracking-luxe font-light">IEC Standards</p>\
+                <div class="mt-4 h-px w-full bg-white/10"></div>\
+                <p class="mt-3 text-xs text-white/65">\
+                  Specifications structured for international cable requirements.\
+                </p>\
+              </div>\
+            </div>\
+          </div>\
+\
+          <div class="mt-14 thin-copper-line"></div>\
+\
+          <div class="reveal mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">\
+            <div class="rounded-3xl border border-white/10 bg-oled/40 p-7">\
+              <p class="text-xs uppercase tracking-luxe text-white/60">\
+                <i class="fa-solid fa-file-signature mr-2 text-white/50"></i> Documentation\
+              </p>\
+              <p class="mt-3 text-white/70 leading-relaxed">\
+                Technical files, declarations, and inspection records structured to support tender and audit workflows.\
+              </p>\
+            </div>\
+            <div class="rounded-3xl border border-white/10 bg-oled/40 p-7">\
+              <p class="text-xs uppercase tracking-luxe text-white/60">\
+                <i class="fa-solid fa-vial-circle-check mr-2 text-white/50"></i> Testing\
+              </p>\
+              <p class="mt-3 text-white/70 leading-relaxed">\
+                Verification built into the process\'97quality gates that protect performance from batch to batch.\
+              </p>\
+            </div>\
+            <div class="rounded-3xl border border-white/10 bg-oled/40 p-7">\
+              <p class="text-xs uppercase tracking-luxe text-white/60">\
+                <i class="fa-solid fa-people-group mr-2 text-white/50"></i> Procurement Ready\
+              </p>\
+              <p class="mt-3 text-white/70 leading-relaxed">\
+                Built for serious buyers: predictable output, clear terms, and transparent technical communication.\
+              </p>\
+            </div>\
+          </div>\
+        </div>\
+      </section>\
+\
+      <!-- Products -->\
+      <section id="products" class="mx-auto max-w-7xl px-5 sm:px-8 py-24 sm:py-32">\
+        <div class="max-w-3xl">\
+          <p class="reveal text-xs uppercase tracking-luxe text-white/60">Products</p>\
+          <h2 class="reveal mt-4 text-2xl sm:text-4xl font-light uppercase tracking-luxe">\
+            Infrastructure-Grade Outputs\
+          </h2>\
+          <p class="reveal mt-6 text-white/70 leading-relaxed">\
+            Products designed for the real world: transport, installation, thermal cycles, and long service life.\
+            Copper that performs, cables that don\'92t negotiate with physics.\
+          </p>\
+        </div>\
+\
+        <div class="mt-14 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">\
+          <!-- Card 1 -->\
+          <article\
+            class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 shadow-soft transition hover:shadow-copperGlow hover:border-copperB/40"\
+          >\
+            <div class="flex items-start justify-between gap-6">\
+              <div>\
+                <p class="text-[11px] uppercase tracking-luxe text-white/60">Primary Metal</p>\
+                <h3 class="mt-3 text-lg font-light uppercase tracking-luxe">Copper Ingots</h3>\
+              </div>\
+              <div class="h-11 w-11 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:border-copperB/40 transition">\
+                <i class="fa-solid fa-cube text-white/70"></i>\
+              </div>\
+            </div>\
+            <div class="mt-7 h-px w-full bg-white/10"></div>\
+            <p class="mt-6 text-white/70 leading-relaxed">\
+              Clean cast ingots engineered for downstream processing stability, logistics durability, and predictable handling.\
+            </p>\
+            <ul class="mt-6 space-y-2 text-xs text-white/65">\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Batch identification & traceability</li>\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Surface quality focused on clean storage</li>\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Export-ready documentation workflows</li>\
+            </ul>\
+          </article>\
+\
+          <!-- Card 2 -->\
+          <article\
+            class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 shadow-soft transition hover:shadow-copperGlow hover:border-copperB/40"\
+          >\
+            <div class="flex items-start justify-between gap-6">\
+              <div>\
+                <p class="text-[11px] uppercase tracking-luxe text-white/60">Conductor Feedstock</p>\
+                <h3 class="mt-3 text-lg font-light uppercase tracking-luxe">Wire Rod (8mm)</h3>\
+              </div>\
+              <div class="h-11 w-11 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:border-copperB/40 transition">\
+                <i class="fa-solid fa-circle-nodes text-white/70"></i>\
+              </div>\
+            </div>\
+            <div class="mt-7 h-px w-full bg-white/10"></div>\
+            <p class="mt-6 text-white/70 leading-relaxed">\
+              Continuous rod optimized for drawing and stranding\'97where dimensional control and surface consistency protect yield.\
+            </p>\
+            <ul class="mt-6 space-y-2 text-xs text-white/65">\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Geometry built for stable drawing behavior</li>\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Handling designed for industrial logistics</li>\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Quality gates aligned with cable production</li>\
+            </ul>\
+          </article>\
+\
+          <!-- Card 3 -->\
+          <article\
+            class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 shadow-soft transition hover:shadow-copperGlow hover:border-copperB/40"\
+          >\
+            <div class="flex items-start justify-between gap-6">\
+              <div>\
+                <p class="text-[11px] uppercase tracking-luxe text-white/60">Finished Product</p>\
+                <h3 class="mt-3 text-lg font-light uppercase tracking-luxe">LV / MV Cables</h3>\
+              </div>\
+              <div class="h-11 w-11 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:border-copperB/40 transition">\
+                <i class="fa-solid fa-bolt text-white/70"></i>\
+              </div>\
+            </div>\
+            <div class="mt-7 h-px w-full bg-white/10"></div>\
+            <p class="mt-6 text-white/70 leading-relaxed">\
+              Power and distribution cables engineered for infrastructure: conductor performance, insulation integrity, and testing discipline.\
+            </p>\
+            <ul class="mt-6 space-y-2 text-xs text-white/65">\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Stranding, insulation, sheathing, verification</li>\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Structured toward IEC expectations</li>\
+              <li class="flex gap-2"><span class="text-copperB">\'97</span> Export markets: West Africa & Europe</li>\
+            </ul>\
+          </article>\
+        </div>\
+\
+        <div class="reveal mt-14 rounded-3xl border border-white/10 bg-oled/50 p-8 sm:p-10">\
+          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">\
+            <div class="max-w-2xl">\
+              <p class="text-xs uppercase tracking-luxe text-white/60">B2B Engagement</p>\
+              <h3 class="mt-4 text-xl sm:text-2xl font-light uppercase tracking-luxe">\
+                Built for Tender-Grade Procurement\
+              </h3>\
+              <p class="mt-4 text-white/70 leading-relaxed">\
+                Clear specifications, responsive technical communication, and documentation aligned with institutional buying.\
+                Our goal: make procurement boring\'97in the best possible way.\
+              </p>\
+            </div>\
+            <div class="flex gap-3">\
+              <a\
+                href="#contact"\
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-xs uppercase tracking-luxe font-medium text-oled bg-copperGrad hover:opacity-95 transition shadow-soft focus:outline-none focus:ring-2 focus:ring-copperB/40"\
+              >\
+                Request Partner Access\
+              </a>\
+              <a\
+                href="#process"\
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-xs uppercase tracking-luxe text-white/85 border border-white/15 hover:border-white/30 hover:text-white transition"\
+              >\
+                Review Process\
+              </a>\
+            </div>\
+          </div>\
+        </div>\
+      </section>\
+\
+      <!-- ESG -->\
+      <section id="esg" class="bg-charcoal/35 border-y border-white/5">\
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 py-24 sm:py-32">\
+          <div class="max-w-3xl">\
+            <p class="reveal text-xs uppercase tracking-luxe text-white/60">ESG & Sustainability</p>\
+            <h2 class="reveal mt-4 text-2xl sm:text-4xl font-light uppercase tracking-luxe">\
+              Responsible Industrialism\
+            </h2>\
+            <p class="reveal mt-6 text-white/70 leading-relaxed">\
+              Copper is a forever material. Our job is to treat it like one\'97recover it, refine it responsibly,\
+              and deliver products that reduce lifecycle waste.\
+            </p>\
+          </div>\
+\
+          <div class="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">\
+            <div class="reveal rounded-3xl border border-white/10 bg-oled/45 p-8">\
+              <div class="h-12 w-12 rounded-2xl border border-white/10 bg-charcoal/40 flex items-center justify-center">\
+                <i class="fa-solid fa-leaf text-white/70"></i>\
+              </div>\
+              <h3 class="mt-6 text-sm uppercase tracking-luxe font-light">Circular Feedstock</h3>\
+              <p class="mt-4 text-white/70 leading-relaxed">\
+                Recycling-focused supply reduces the need for virgin extraction and supports regional industrial resilience.\
+              </p>\
+            </div>\
+\
+            <div class="reveal rounded-3xl border border-white/10 bg-oled/45 p-8">\
+              <div class="h-12 w-12 rounded-2xl border border-white/10 bg-charcoal/40 flex items-center justify-center">\
+                <i class="fa-solid fa-solar-panel text-white/70"></i>\
+              </div>\
+              <h3 class="mt-6 text-sm uppercase tracking-luxe font-light">Energy Discipline</h3>\
+              <p class="mt-4 text-white/70 leading-relaxed">\
+                Process optimization and energy accountability\'97because efficiency is both an economic and environmental lever.\
+              </p>\
+            </div>\
+\
+            <div class="reveal rounded-3xl border border-white/10 bg-oled/45 p-8">\
+              <div class="h-12 w-12 rounded-2xl border border-white/10 bg-charcoal/40 flex items-center justify-center">\
+                <i class="fa-solid fa-water text-white/70"></i>\
+              </div>\
+              <h3 class="mt-6 text-sm uppercase tracking-luxe font-light">Operational Controls</h3>\
+              <p class="mt-4 text-white/70 leading-relaxed">\
+                Structured environmental management aligned with audit expectations for industrial zones and export markets.\
+              </p>\
+            </div>\
+          </div>\
+\
+          <div class="reveal mt-14 rounded-3xl border border-white/10 bg-oled/55 p-8 sm:p-10">\
+            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">\
+              <div class="max-w-2xl">\
+                <p class="text-xs uppercase tracking-luxe text-white/60">Why it matters</p>\
+                <p class="mt-4 text-white/70 leading-relaxed">\
+                  Governments and construction holdings are increasingly judged by the upstream impact of their supply chain.\
+                  Responsible metallurgy isn\'92t charity\'97it's risk management.\
+                </p>\
+              </div>\
+              <div class="flex items-center gap-3">\
+                <span class="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-luxe text-white/70">\
+                  <span class="h-1.5 w-1.5 rounded-full bg-copperA"></span>\
+                  Supplier Due Diligence\
+                </span>\
+                <span class="hidden sm:inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-luxe text-white/70">\
+                  <span class="h-1.5 w-1.5 rounded-full bg-copperB"></span>\
+                  Lifecycle Thinking\
+                </span>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+      </section>\
+\
+      <!-- Contact / Footer -->\
+      <footer id="contact" class="mx-auto max-w-7xl px-5 sm:px-8 py-20 sm:py-24">\
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">\
+          <div class="lg:col-span-5">\
+            <p class="reveal text-xs uppercase tracking-luxe text-white/60">Copper Cluster Maroc</p>\
+            <h2 class="reveal mt-4 text-2xl sm:text-4xl font-light uppercase tracking-luxe">\
+              Partner Access\
+            </h2>\
+            <p class="reveal mt-6 text-white/70 leading-relaxed">\
+              For procurement teams, EPCs, and institutional buyers: request technical details, documentation structure,\
+              and export capability information. We respond in a business-first format.\
+            </p>\
+\
+            <div class="reveal mt-10 flex flex-col sm:flex-row gap-3">\
+              <a\
+                href="mailto:partners@copperclustermaroc.com"\
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-xs uppercase tracking-luxe font-medium text-oled bg-copperGrad hover:opacity-95 transition shadow-soft"\
+              >\
+                Email Partner Desk\
+                <i class="fa-solid fa-envelope ml-3 text-[12px]"></i>\
+              </a>\
+              <a\
+                href="#top"\
+                class="inline-flex items-center justify-center rounded-full px-6 py-3 text-xs uppercase tracking-luxe text-white/85 border border-white/15 hover:border-white/30 hover:text-white transition"\
+              >\
+                Back to Top\
+              </a>\
+            </div>\
+          </div>\
+\
+          <div class="lg:col-span-7">\
+            <div class="reveal rounded-3xl border border-white/10 bg-charcoal/30 p-8 sm:p-10 shadow-soft">\
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">\
+                <div>\
+                  <p class="text-xs uppercase tracking-luxe text-white/60">Location</p>\
+                  <p class="mt-4 text-white/80 leading-relaxed">\
+                    OEZ Tiflet, Morocco<br />\
+                    Vertically integrated copper & cable manufacturing cluster\
+                  </p>\
+                  <div class="mt-6 h-px w-full bg-white/10"></div>\
+                  <p class="mt-6 text-xs uppercase tracking-luxe text-white/60">Export Markets</p>\
+                  <p class="mt-4 text-white/80 leading-relaxed">\
+                    West Africa<br />\
+                    Europe\
+                  </p>\
+                </div>\
+\
+                <div>\
+                  <p class="text-xs uppercase tracking-luxe text-white/60">Contact</p>\
+                  <p class="mt-4 text-white/80 leading-relaxed">\
+                    Partner Desk:<br />\
+                    <a\
+                      href="mailto:partners@copperclustermaroc.com"\
+                      class="text-white hover:text-white/90 underline decoration-white/20 hover:decoration-white/40 underline-offset-4 transition"\
+                    >\
+                      partners@copperclustermaroc.com\
+                    </a>\
+                  </p>\
+\
+                  <div class="mt-6 h-px w-full bg-white/10"></div>\
+\
+                  <p class="mt-6 text-xs uppercase tracking-luxe text-white/60">Capabilities Summary</p>\
+                  <ul class="mt-4 space-y-2 text-sm text-white/70">\
+                    <li class="flex gap-3">\
+                      <span class="text-copperB">\'97</span> Scrap sourcing \uc0\u8594  refining \u8594  casting \u8594  cabling\
+                    </li>\
+                    <li class="flex gap-3">\
+                      <span class="text-copperB">\'97</span> Documentation structured for institutional procurement\
+                    </li>\
+                    <li class="flex gap-3">\
+                      <span class="text-copperB">\'97</span> Compliance mindset: quality, environment, standards\
+                    </li>\
+                  </ul>\
+                </div>\
+              </div>\
+\
+              <div class="mt-10 thin-copper-line"></div>\
+\
+              <div class="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">\
+                <p class="text-xs uppercase tracking-luxe text-white/50">\
+                  \'a9 <span id="year"></span> Copper Cluster Maroc. All rights reserved.\
+                </p>\
+                <div class="flex items-center gap-4 text-white/55">\
+                  <span class="text-xs uppercase tracking-luxe">Industrial Luxury</span>\
+                  <span class="h-1 w-1 rounded-full bg-white/20"></span>\
+                  <span class="text-xs uppercase tracking-luxe">Built for B2B</span>\
+                </div>\
+              </div>\
+            </div>\
+          </div>\
+        </div>\
+      </footer>\
+    </main>\
+\
+    <script>\
+      // Year\
+      document.getElementById("year").textContent = new Date().getFullYear();\
+\
+      // Reveal on scroll\
+      const els = document.querySelectorAll(".reveal");\
+      const io = new IntersectionObserver(\
+        (entries) => \{\
+          entries.forEach((e) => \{\
+            if (e.isIntersecting) e.target.classList.add("is-visible");\
+          \});\
+        \},\
+        \{ threshold: 0.12 \}\
+      );\
+      els.forEach((el) => io.observe(el));\
+    </script>\
+  </body>\
+</html>\
+}
