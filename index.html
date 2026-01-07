@@ -625,14 +625,17 @@
 
 
           <!-- Card 2 (WIRE ROD (8MM))-->
+          <!-- Card 2 -->
           <article
-            <div class="absolute inset-0 bg-[url('assets/bg-rod.webp')] bg-cover bg-center opacity-35"></div>
-            <div class="absolute inset-0 bg-gradient-to-b from-oled/70 via-oled/35 to-oled/80"></div>
-
-            
-            class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 shadow-soft transition hover:shadow-copperGlow hover:border-copperB/40"
+            class="reveal group relative overflow-hidden rounded-3xl border border-white/10 bg-charcoal/30 p-8 shadow-soft transition hover:shadow-copperGlow hover:border-copperB/40"
           >
-           <div class="relative z-10">
+            <!-- Background image -->
+            <div class="absolute inset-0 bg-[url('assets/bg-rod.webp')] bg-cover bg-center opacity-35"></div>
+            <!-- Readability overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-oled/70 via-oled/35 to-oled/80"></div>
+          
+            <!-- Content -->
+            <div class="relative z-10">
               <div class="flex items-start justify-between gap-6">
                 <div>
                   <p class="text-[11px] uppercase tracking-luxe text-white/60">Conductor Feedstock</p>
@@ -654,29 +657,40 @@
             </div>
           </article>
 
-          <!-- Card 3 -->
+
+          <!-- Card 3 (LV / MV CABLES) -->
+        <!-- Card 3 -->
           <article
-            class="reveal group rounded-3xl border border-white/10 bg-charcoal/30 p-8 shadow-soft transition hover:shadow-copperGlow hover:border-copperB/40"
+            class="reveal group relative overflow-hidden rounded-3xl border border-white/10 bg-charcoal/30 p-8 shadow-soft transition hover:shadow-copperGlow hover:border-copperB/40"
           >
-            <div class="flex items-start justify-between gap-6">
-              <div>
-                <p class="text-[11px] uppercase tracking-luxe text-white/60">Finished Product</p>
-                <h3 class="mt-3 text-lg font-light uppercase tracking-luxe">LV / MV Cables</h3>
+            <!-- Background image -->
+            <div class="absolute inset-0 bg-[url('assets/bg-cables.webp')] bg-cover bg-center opacity-35"></div>
+            <!-- Readability overlay -->
+            <div class="absolute inset-0 bg-gradient-to-b from-oled/70 via-oled/35 to-oled/80"></div>
+          
+            <!-- Content -->
+            <div class="relative z-10">
+              <div class="flex items-start justify-between gap-6">
+                <div>
+                  <p class="text-[11px] uppercase tracking-luxe text-white/60">Finished Product</p>
+                  <h3 class="mt-3 text-lg font-light uppercase tracking-luxe">LV / MV Cables</h3>
+                </div>
+                <div class="h-11 w-11 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:border-copperB/40 transition">
+                  <i class="fa-solid fa-bolt text-white/70"></i>
+                </div>
               </div>
-              <div class="h-11 w-11 rounded-2xl border border-white/10 bg-oled/70 flex items-center justify-center group-hover:border-copperB/40 transition">
-                <i class="fa-solid fa-bolt text-white/70"></i>
-              </div>
+              <div class="mt-7 h-px w-full bg-white/10"></div>
+              <p class="mt-6 text-white/70 leading-relaxed">
+                Power and distribution cables engineered for infrastructure: conductor performance, insulation integrity, and testing discipline.
+              </p>
+              <ul class="mt-6 space-y-2 text-xs text-white/65">
+                <li class="flex gap-2"><span class="text-copperB">—</span> Stranding, insulation, sheathing, verification</li>
+                <li class="flex gap-2"><span class="text-copperB">—</span> Structured toward IEC expectations</li>
+                <li class="flex gap-2"><span class="text-copperB">—</span> Export markets: West Africa & Europe</li>
+              </ul>
             </div>
-            <div class="mt-7 h-px w-full bg-white/10"></div>
-            <p class="mt-6 text-white/70 leading-relaxed">
-              Power and distribution cables engineered for infrastructure: conductor performance, insulation integrity, and testing discipline.
-            </p>
-            <ul class="mt-6 space-y-2 text-xs text-white/65">
-              <li class="flex gap-2"><span class="text-copperB">—</span> Stranding, insulation, sheathing, verification</li>
-              <li class="flex gap-2"><span class="text-copperB">—</span> Structured toward IEC expectations</li>
-              <li class="flex gap-2"><span class="text-copperB">—</span> Export markets: West Africa & Europe</li>
-            </ul>
           </article>
+
         </div>
 
         <div class="reveal mt-14 rounded-3xl border border-white/10 bg-oled/50 p-8 sm:p-10">
