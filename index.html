@@ -920,5 +920,23 @@
       v.addEventListener("loadedmetadata", tryPlay);
     });
   </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const v = document.getElementById("heroVideo");
+    if (!v) return;
+  
+    v.muted = true;
+    v.playsInline = true;
+  
+    const tryPlay = () => {
+      const p = v.play();
+      if (p && p.catch) p.catch(() => {});
+    };
+  
+    tryPlay();
+    v.addEventListener("loadedmetadata", tryPlay);
+  });
+  </script>
+ 
   </body>
 </html>
