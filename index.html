@@ -224,9 +224,8 @@
     
     <main id="top" class="noise">
       <section class="relative min-h-[92vh] flex items-center">
-        <!-- "Video" Placeholder -->
+        <!-- Video Background -->
         <div class="absolute inset-0">
-          <!-- Real video background -->
           <video
             id="heroVideo"
             class="absolute inset-0 h-full w-full object-cover"
@@ -234,48 +233,42 @@
             muted
             loop
             playsinline
-            webkit-playsinline
             preload="auto"
-          >
-            <source src="assets/plant-hero.mp4?v=2" type="video/mp4" />
-          </video>
-          <div class="absolute inset-0 bg-[radial-gradient(1200px_circle_at_25%_25%,rgba(240,180,118,.10),transparent_55%),radial-gradient(900px_circle_at_75%_60%,rgba(184,115,51,.08),transparent_55%)]"></div>
-          <div class="absolute inset-0 bg-gradient-to-b from-[#050505]/75 via-[#050505]/45 to-[#050505]/85"></div>          <!-- Real video background -->
-          <video
-            class="absolute inset-0 h-full w-full object-cover"
-            autoplay
-            muted
-            loop
-            playsinline
-            preload="metadata"
           >
             <source src="assets/plant-hero.mp4" type="video/mp4" />
           </video>
-          
-          <!-- Optional: subtle grid + extra readability on top of video -->
+    
+          <!-- Highlights -->
+          <div class="absolute inset-0 bg-[radial-gradient(1200px_circle_at_25%_25%,rgba(240,180,118,.10),transparent_55%),radial-gradient(900px_circle_at_75%_60%,rgba(184,115,51,.08),transparent_55%)]"></div>
+    
+          <!-- Readability overlay -->
+          <div class="absolute inset-0 bg-gradient-to-b from-[#050505]/75 via-[#050505]/45 to-[#050505]/85"></div>
+    
+          <!-- Optional grid -->
           <div class="absolute inset-0 opacity-[.18]">
             <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,.05)_1px,transparent_1px),linear-gradient(0deg,rgba(255,255,255,.04)_1px,transparent_1px)] bg-[size:88px_88px]"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-oled via-transparent to-oled"></div>
           </div>
-
+    
           <!-- Bottom fade -->
           <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-oled to-transparent"></div>
         </div>
-
+    
         <div class="relative mx-auto max-w-7xl px-5 sm:px-8 py-24 sm:py-28">
           <div class="max-w-3xl">
-          <!-- Brand plate (Hero) -->
-          <div class="inline-flex flex-col gap-4 mb-12">
-            <div class="inline-flex items-center gap-4">
-              <span class="inline-flex items-center rounded-3xl bg-white/5 border border-white/10 px-6 py-5">
-                <img
-                  src="./assets/cumelt-logo-dark.webp"
-                  alt="CUMELT MAROC"
-                  class="h-16 sm:h-20 lg:h-24 w-auto opacity-100
-                  loading="eager"
-                  decoding="async"
-                />
-              </span>
+            <!-- Brand plate (Hero) -->
+            <div class="inline-flex flex-col gap-4 mb-12">
+              <div class="inline-flex items-center gap-4">
+                <span class="inline-flex items-center rounded-3xl bg-white/5 border border-white/10 px-6 py-5">
+                  <img
+                    src="./assets/cumelt-logo-dark.webp"
+                    alt="CUMELT MAROC"
+                    class="h-16 sm:h-20 lg:h-24 w-auto opacity-100"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </span>
+
         
               <div class="hidden sm:flex flex-col">
                 <span class="text-[11px] uppercase tracking-[.18em] text-white/60">
